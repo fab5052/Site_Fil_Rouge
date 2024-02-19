@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+
+  <title>Fil_Rouge</title>
+
+  <!-- Bootstrap core CSS -->
+<!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Custom styles for this template -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+		
+  <nav>
+
+    <a href="index.html" class="nav-icon" aria-label="homepage" aria-current="page">
+      <span><img class="Logo" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></span>
+
+    </a>
+    <div class="main-navlinks">
+      <button type="button" class=" toggle  justify-items-center" aria-label="Toggle Navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navlinks-container ">
+
+        <a href="index.html" aria-current="page">Accueil</a>
+
+        <a href="categories.html">Catégories</a>
+
+        <a href="plat.html">Plats</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+    </div>
+  <!--  <form class="d-flex">
+      <input class="form-control mr-2 width: 65px height: 25px text-left" type="search" placeholder="recherche..."
+        aria-label="Search"
+        style=" opacity: 0.75; box-shadow: 2px 2px 10px 2px rgba(49, 34, 34, 0.9) inset; border: 1px #403737 solid; border-right: 1px #0f0d0d89 solid; text-align: center; font-size: 20px; font-family: Calibri; letter-spacing: 2px">
+
+      <button class="btn btn-outline-secondary" type="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+          height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"
+          style="transform: translateY(-15%) ">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg>
+      </button>
+    </form>-->
+
+
+
+        <div id="search">
+          <input type="text" name="input" class="input" placeholder="Search" />
+          <button type="reset" class="search " id="search-button"></button>
+        </div>
+    
+
+
+      <a href="#"><i class="fa fa-shopping-cart red" style="width: 15; height: 15"></i><span class="badge "> 0  </span></a>
+      
+    </div>
+
+    <div>
+
+
+  </nav>
+</div>
+
+
+
+</header>
+  
+  <div class="parallax " style="height: 100vh; opacity: 0.85 ;">
+
+
+
+      <div class="container-fluid position-relative mt-5">
+        <h1> 
+          <script langage="JavaScript1.2">
+                    var message = "Catégories" //
+                    var neonbasecolor = "#8fe9e57c;" //couleur de base du texte
+                    var neontextcolor = "#9ac74762"
+                    var neontextcolor2 = "#610606"
+                    var flashspeed = 200 // vitesse du flashing en millisecondes
+                    var flashingletters = 3 // nombre de lettres qui flashent en neontextcolor
+                    var flashingletters2 = 1 // nombre de lettres qui flashent en neontextcolor2 (0 pour désactiver)
+                    var flashpause = 0 // pause entre les cycles de flashing en millisecondes
+                    ///Ne rien toucher sous cette ligne///
+                    var n = 0
+                    if (document.all || document.getElementById) {
+                      document.write('<font color="' + neonbasecolor + '">')
+                      for (m = 0; m < message.length; m++)
+                        document.write('<span id="neonlight' + m + '">' + message.charAt(m) + '</span>')
+                      document.write('</font>')
+                    } else
+                      document.write(message)
+              
+                    function crossref(number) {
+                      var crossobj = document.all ? eval("document.all.neonlight" + number) : document.getElementById("neonlight" + number)
+                      return crossobj
+                    }
+              
+                    function neon() {
+                      //Change all letters to base color
+                      if (n == 0) {
+                        for (m = 0; m < message.length; m++)
+                          crossref(m).style.color = neonbasecolor
+                      }
+                      //cycle through and change individual letters to neon color
+                      crossref(n).style.color = neontextcolor
+                      if (n > flashingletters - 1) crossref(n - flashingletters).style.color = neontextcolor2
+                      if (n > (flashingletters + flashingletters2) - 1) crossref(n - flashingletters - flashingletters2).style.color = neonbasecolor
+                      if (n < message.length - 1)
+                        n++
+                      else {
+                        n = 0
+                        clearInterval(flashing)
+                        setTimeout("beginneon()", flashpause)
+                        return
+                      }
+                    }
+              
+                    function beginneon() {
+                      if (document.all || document.getElementById)
+                        flashing = setInterval("neon()", flashspeed)
+                    }
+                    beginneon()
+                  </script>
+      </h1>
+      </div>
+
+      <div class="site-inner">
+        <div class="container-fluid ">
+          <!-- ACCORDION ROW -->
+          <div class="row">
+            <ul class="accordion-group" id="accordion">
+              <li
+                style="background-image: url('https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');">
+                <div class="accordion-overlay"></div>
+                <h3>Rustic</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <p>Rual and rustic</p>
+                  </article>
+                </section>
+              </li>
+              <li class="out"
+                style="background-image: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80');">
+                <div class="accordion-overlay"></div>
+                <h3>Clean</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <p>For the single or couple
+                    </p>
+                  </article>
+                </section>
+              </li>
+              <li
+                style="background-image: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80');">
+                <div class="accordion-overlay"></div>
+                <h3>Stylish</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <p>When people want it cosy but stylish</p>
+                  </article>
+                </section>
+              </li>
+              <li
+                style="background-image: url('https://images.unsplash.com/photo-1495433324511-bf8e92934d90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');">
+                <div class="accordion-overlay"></div>
+                <h3>Family</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <p>For the family dinner</p>
+                  </article>
+                </section>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+
+        
+     <!--      <label for="categoryFilter" class="mb-4 "></label>
+            <select id="categoryFilter" class="form-control mb-3" style="opacity: 0.75; box-shadow: 2px 2px 10px 2px rgba(49, 34, 34, 0.9) inset; border: 1px #403737 solid; border-right: 1px #0f0d0d89 solid; text-align: center; font-size: 20px; font-family: Calibri; letter-spacing: 2px">
+                <option value="">Sélectionnez une catégorie</option>
+                <-- Les options de catégorie seront générées dynamiquement en JavaScript --
+            </select>
+
+            <div class="accordion col-sm-12  d-flex justify-content-center  " id="accordion">
+                <-- Les catégories seront générées dynamiquement en JavaScript --
+            </div>
+        </div>
+    </div><script>
+      $(document).ready(function () {
+          const categoryFilter = $('#categoryFilter');
+          const jsonDataUrl = 'customData.json';
+  
+          $.ajax({
+              url: jsonDataUrl,
+              type: 'GET',
+              dataType: 'json',
+              success: function (data) {
+                  generateCategoryOptions(data);
+  
+                  categoryFilter.change(function () {
+                      const selectedCategory = $(this).val();
+                      filterMenu(data, selectedCategory);
+                  });
+              },
+              error: function (error) {
+                  console.error('Erreur lors du chargement du fichier JSON.', error);
+              }
+          });
+  
+          function generateCategoryOptions(data) {
+              data.categorie.forEach(category => {
+                  categoryFilter.append($('<option>', {
+                      value: category.id_categorie,
+                      text: category.libelle
+                  }));
+              });
+          }
+  
+          function filterMenu(data, category) {
+              window.location.href = 'plat.html?category=' + category;
+          }
+  
+          // Générer les catégories sous forme d'accordéon
+          function generateAccordion(data) {
+              const accordion = $('#accordion');
+              accordion.empty();
+              data.categorie.forEach(category => {
+                  const card = $('<div class="card"></div>');
+                  const cardHeader = $('<div class="card-header" id="heading' + category.id_categorie + '"></div>').appendTo(card);
+                  const button = $('<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse' + category.id_categorie + '" aria-expanded="true" aria-controls="collapse' + category.id_categorie + '">' + category.libelle + '</button>').appendTo(cardHeader);
+                  const collapseDiv = $('<div id="collapse' + category.id_categorie + '" class="collapse" aria-labelledby="heading' + category.id_categorie + '" data-parent="#accordion"></div>').appendTo(card);
+                  const cardBody = $('<div class="card-body"></div>').appendTo(collapseDiv);
+                  // Ajout de la balise img pour afficher l'image de la catégorie
+                  cardBody.append('<img src="' + category.image + '" class="img-fluid" alt="' + category.libelle + '">');
+                  card.append(cardBody)
+                  card.appendTo(accordion);
+              });
+          }
+  
+          // Appel initial pour générer l'accordéon des catégories
+          $.ajax({
+              url: jsonDataUrl,
+              type: 'GET',
+              dataType: 'json',
+              success: function (data) {
+                  generateAccordion(data);
+              },
+              error: function (error) {
+                  console.error('Erreur lors du chargement du fichier JSON.', error);
+              }
+          });
+      });
+  </script>
+
+
+
+
+
+
+  
+
+
+  
+--> 
+
+
+
+<div class="footer ">
+  <div class="footer-inner">
+
+    <footer class="text-muted py-5">
+      <div class="container">
+
+        <p class="float-right"><a href="#">Revenir en haut ▲</a></p>
+        <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h3">About us</h3>
+            <ul class="footer-list">
+              <li><a href="#">Our story</a></li>
+              <li><a href="#">Venue</a></li>
+              <li><a href="#">Other</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="h3">Partners</h3>
+            <ul class="footer-list">
+
+              <li><a href="#">MIO</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="h3">Service clents</h3>
+            <ul class="footer-list">
+              <li><a href="#">Chat</a></li>
+              <li><a href="#">03 22 453 352</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="h3">Socials</h3>
+            <ul class="footer-list footer-list-inline">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</div>
+
+
+  <script src="script.js"></script>
+  <script src="toggle.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script> 
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
+  <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js></script>
+
+
+
+</body>
+
+</html>

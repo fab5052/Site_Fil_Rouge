@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+
+  <title>Fil_Rouge</title>
+
+
+  <!-- Custom styles for this template -->
+
+
+
+  <!-- Bootstrap core CSS -->
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" defer href="signIn.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<header class="header">
+
+
+
+  <nav>
+
+    <a href="index.html" class="nav-icon" aria-label="homepage" aria-current="page">
+      <span><img class="Logo" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></span>
+
+    </a>
+    <div class="main-navlinks">
+  <bouton type="button" class=" toggle " aria-label="Toggle Navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      
+      </button>
+    </div>
+      <div class="navlinks-container d-flex ">
+
+        <h3><a class="nav-link" href="index.html">Accueil</a></h3>
+       <h3> <a class="nav-link" href="categories.html">Catégories</a></h3>
+       <h3><a class="nav-link" href="plat.html">Plats</a></h3>
+      <h3><a class="nav-link" href="contact.html"  aria-current="page">Contact</a></h3>
+
+      </div>
+    
+  <!--  <form class="d-flex">
+      <input class="form-control mr-2 width: 65px height: 25px text-left" type="search" placeholder="recherche..."
+        aria-label="Search"
+        style=" opacity: 0.75; box-shadow: 2px 2px 10px 2px rgba(49, 34, 34, 0.9) inset; border: 1px #403737 solid; border-right: 1px #0f0d0d89 solid; text-align: center; font-size: 20px; font-family: Calibri; letter-spacing: 2px">
+
+      <button class="btn btn-outline-secondary" type="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+          height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"
+          style="transform: translateY(-15%) ">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg>
+      </button>
+    </form>-->
+
+
+
+    
+        <div class="nav-authentication ">
+        
+          <div class="caddy">
+         
+            <h3> 
+          <a><i class="fa fa-shopping-cart red"></i> <span class="badge badge-red">0</span></a>
+            </h3>
+      
+        </div>
+          <div class="sign-btns">
+            <h3> <a href="#"><img src="assets/img/user.svg"  class="user-toggler" aria-label="Sign in page" alt="user icon" >
+       <span class="badge badge-red">0</span></a></h3>
+       <h3<a><i class="fa fa-sign-in" aria-hidden="true"></i></a>  </h3>
+
+          </div>
+        </div>
+    
+
+  
+  
+
+
+  </nav>
+
+
+
+</header>
+
+
+
+
+
+  <div class="parallax " style="height: 100vh; opacity: 0.85 ;">
+
+
+
+
+
+
+    <!--<div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+              <h2 class="mt-5 mb-3 text-center">Connexion</h2>
+              <form method="POST" name="connexion" id="validationCustom" class="needs-validation" novalidate>
+                  <div class="mb-3">
+                      <label for="validationCustomUsername" class="form-label">Nom d'utilisateur</label>
+                      <div class="input-group has-validation">
+                          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                          <div class="valid-feedback">Valide!</div>
+                          <div class="invalid-feedback">Veuillez choisir un nom d'utilisateur.</div>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="validationCustomPassword" class="form-label">Mot de passe</label>
+                      <input type="password" class="form-control" id="validationCustomPassword" required>
+                      <div class="invalid-feedback">Veuillez saisir un mot de passe.</div>
+                  </div>
+                  <button class="btn btn-outline-primary w-100 mb-3" type="submit">Se connecter</button>
+              </form>
+              <p class="text-center">Pas encore de compte ? <a href="inscription.html">Inscrivez-vous ici</a></p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+    <div class="container-fluid p-6 col-8  d-flex justify-content-evenly ">
+      <div class="row  ">
+      
+          <h2 class="mt-5 mb-3">Formulaire d'inscription</h2>
+
+       
+
+            <form method="POST" name="inscription" id="validationCustom" class="needs-validation " novalidate>
+             
+              <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Jean" required>
+                <div class="valid-feedback">Semble correcte!</div>
+              </div>
+
+
+              <div class="col-md-6">
+             <div class="valid-feedback">Semble correcte!</div>
+             <span> <label for="validationCustom02" class="form-label">Nom</label></span>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Durand" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend" required>
+                  <div class="valid-feedback">Semble correcte!</div>
+                  <div class="invalid-feedback">Choisissez un nom d'utilisateur entre 8 et 12 caractères.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Ville</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">Chosissez un nom de ville correcte.</div>
+              </div>
+            
+              <div class="col-md-4">
+                <label for="validationCustom05" class="form-label">Email</label>
+            
+                    <input type="email" class="form-control" id="validationCustom05" aria-describedby="emailHelpId"
+                      placeholder="abc@mail.com"  required>
+                    </div>
+                    <div class="invalid-feedback">L'adresse doit contenir un "@".
+                    </div>
+
+                    <div class="col-md-4">
+                      <label for="validationCustom04" class="form-label">Sujets</label>
+                      <select class="form-select" id="validationCustom04" required>
+      
+                        <option value="" selected>Veuillez séléctionner un sujet</option>
+                        <option value="produit">Question sur un produit</option>
+                        <option value="reclamation">Réclamation</option>
+                        <option value="autres">Autres</option>
+                      </select>
+                      <option selected disabled value="">Choisir un sujet...</option>
+                      <option>...</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-4">
+                      <label for="validationCustom01" class="form-label">Votre question:</label>
+                  
+                   
+                      <textarea class="form-label" name="question" id="question" placeholder="* Maximum 50 caractères" required></textarea>
+                 
+                  <div class="invalid-feedback">* Remplir le champ question.</div>
+                  </div>
+
+              <div class="form-check my-2">
+                <input class="form-check-input" type="checkbox" value="accepter" id="traitement" name="traitement"
+                  required>
+                <label class="form-check-label" for="traitement">* J'accepte le traitement informatique de ce
+                  formulaire.</label>
+                <div class="invalid-feedback">Vous devez valider.</div>
+              </div>
+              <div>
+                <button class="btn btn-outline-success" type="submit" value="Envoyer">Envoyer</button>
+                <button class="btn btn-outline-danger" type="reset" value="Annuler">Annuler</button>
+              </div>
+
+              </form>
+       
+        </div>
+        </div>-->
+
+
+
+
+             
+
+
+
+                  <div class="a-box a-spacing-extra-large">
+                    <div class="a-box-inner">
+                      <form id="a-page" class="ap_register_form" name="register" method="post" action="MailHandler-sub.php" novalidate>
+
+
+                      <h1 class="a-spacing-small">
+                        Create account
+                      </h1>
+
+
+
+
+                      <div class="a-row a-spacing-base">
+
+
+
+
+
+                        <label for="ap_customer_name" class="a-form-label">
+                          Your name
+                        </label>
+
+
+                        <input type="text" maxlength="50" id="ap_customer_name" autocomplete="name"
+                          placeholder="First and last name" name="customerName" tabindex="1"
+                          class="a-input-text a-span12 auth-autofocus auth-required-field a-form-error">
+
+
+
+
+
+                        <div id="auth-customerName-missing-alert"
+                          class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini"
+                          role="alert" style="display: block;">
+                          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                            <div class="a-alert-content">
+                              Enter your name
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                        <div id="auth-inline-customerName-success-checklist"
+                          class="a-section auth-inline-success-checklist">
+                          <div id="auth-customerName-success-check-item-1"
+                            class="a-box a-alert-inline a-alert-inline-success auth-inline-grey-check-item a-spacing-top-mini"
+                            aria-live="polite" aria-atomic="true">
+                            <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                              <div class="a-alert-content">
+                                Use at least 1 character
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+
+
+                      </div>
+
+
+
+                      <label for="ap_email" class="a-form-label">
+                        Mobile number or email
+                      </label>
+
+
+                      <input type="email" maxlength="64" id="ap_email" autocomplete="email" name="email" tabindex="3"
+                        class="a-input-text a-span12 a-spacing-micro auth-required-field auth-require-claim-validation"
+                        data-validation-id="email">
+
+
+
+
+
+
+                      <div id="auth-email-missing-alert"
+                        class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini"
+                        role="alert">
+                        <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                          <div class="a-alert-content">
+                            Enter your email or mobile phone number
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+                      <div id="auth-email-invalid-claim-alert"
+                        class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini"
+                        role="alert">
+                        <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                          <div class="a-alert-content">
+                            Enter a valid email address or phone number
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+                      <div id="auth-inline-email-success-checklist" class="a-section auth-inline-success-checklist">
+                        <div id="auth-email-success-check-item-1"
+                          class="a-box a-alert-inline a-alert-inline-success auth-inline-grey-check-item a-spacing-top-mini"
+                          aria-live="polite" aria-atomic="true">
+                          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                            <div class="a-alert-content">
+                              Use half-width characters
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div id="auth-email-success-check-item-2"
+                          class="a-box a-alert-inline a-alert-inline-success auth-inline-grey-check-item a-spacing-top-mini"
+                          aria-live="polite" aria-atomic="true">
+                          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                            <div class="a-alert-content">
+                              Use a valid e-mail or mobile number
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+                    <div class="auth-require-fields-match-group">
+
+
+                      <div class="a-row a-spacing-base">
+
+
+                        <label for="ap_password" class="a-form-label">
+                          Password
+                        </label>
+
+
+                        <input type="password" maxlength="1024" id="ap_password" autocomplete="off"
+                          placeholder="At least 6 characters" name="password" tabindex="5"
+                          class="a-input-text a-span12 auth-required-field auth-require-fields-match auth-require-password-validation">
+
+
+
+
+
+
+                        <div
+                          class="a-box a-alert-inline a-alert-inline-info auth-inlined-information-message a-spacing-top-mini"
+                          aria-live="polite" aria-atomic="true">
+                          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                            <div class="a-alert-content">
+                              Passwords must be at least 6 characters.
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+                        <div id="auth-password-missing-alert"
+                          class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini"
+                          role="alert">
+                          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                            <div class="a-alert-content">
+                              Enter at least 6 half-width characters
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+
+                        <div id="auth-password-invalid-password-alert"
+                          class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini"
+                          role="alert">
+                          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                            <div class="a-alert-content">
+                              Enter at least 6 half-width characters
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+                        <div id="auth-inline-password-success-checklist"
+                          class="a-section auth-inline-success-checklist">
+                          <div id="auth-password-success-check-item-1"
+                            class="a-box a-alert-inline a-alert-inline-success auth-inline-grey-check-item a-spacing-top-mini"
+                            aria-live="polite" aria-atomic="true">
+                            <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                              <div class="a-alert-content">
+                                Use half-width characters
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div id="auth-password-success-check-item-2"
+                            class="a-box a-alert-inline a-alert-inline-success auth-inline-grey-check-item a-spacing-top-mini"
+                            aria-live="polite" aria-atomic="true">
+                            <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                              <div class="a-alert-content">
+                                Use at least 6 characters
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                      </div>
+
+
+
+
+                      <div class="a-row a-spacing-base">
+
+
+
+                        <label for="ap_password_check" class="a-form-label">
+                          Re-enter password
+                        </label>
+
+
+                        <input type="password" maxlength="1024" id="ap_password_check" autocomplete="off"
+                          name="passwordCheck" tabindex="6"
+                          class="a-input-text a-span12 auth-required-field auth-require-fields-match">
+
+
+
+
+                        <div id="auth-passwordCheck-missing-alert"
+                          class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini"
+                          role="alert">
+                          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                            <div class="a-alert-content">
+                              Type your password again
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div id="auth-password-mismatch-alert"
+                          class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini"
+                          role="alert">
+                          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                            <div class="a-alert-content">
+                              Passwords must match
+                            </div>
+                          </div>
+                        </div>
+
+               
+
+
+
+                    <div id="mobileClaimDisclosureMessage"
+                      class="a-section a-spacing-top-mini auth-inlined-information-message aok-hidden">
+                      By enrolling a mobile phone number, you consent to receive automated
+                      security notifications via text message from Amazon. Remove your number
+                      in
+                      Login &amp; Security to cancel. For more information reply HELP. Message
+                      and
+                      data rates may apply. Message frequency varies.
+                    </div>
+                    <div id="mobileClaimDisclosureMessageRelaxed"
+                      class="a-section a-spacing-top-mini auth-inlined-information-message aok-hidden">
+                      To verify your number, we will send you a text message with a temporary
+                      code. Message and data rates may apply.
+                    </div>
+
+
+
+                    <div class="a-section a-spacing-extra-large">
+                      <span id="auth-continue"
+                        class="a-button a-button-span12 a-button-primary auth-requires-verify-modal"><span
+                          class="a-button-inner"><input id="continue" tabindex="8" class="a-button-input" type="submit"
+                            aria-labelledby="auth-continue-announce"><span id="auth-continue-announce"
+                            class="a-button-text" aria-hidden="true">
+                            <span class="default-text">Continue</span>
+                            <span class="phone-text aok-hidden">Verify mobile
+                              number</span>
+                            <span class="email-text aok-hidden">Verify email</span>
+                          </span></span></span>
+                    </div>
+
+
+
+                    <div class="a-section a-spacing-extra-large">
+
+
+                      <div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small">
+                        By creating an account, you agree to <a
+                          href="/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&amp;nodeId=643006">Conditions
+                          of Use</a> and <a
+                          href="/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&amp;nodeId=643000">Privacy
+                          Notice</a>.
+                      </div>
+
+
+                    </div>
+
+                    <script src="Form.js"></script>
+                    <script src="toggle.js"></script>
+         
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                      crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "items": [
+     {
+      "carousel-id": "0",
+      "titre": "Pizza",
+      "image": "assets/img/images_the_district/category/pizza_cat.png",
+      "description": "Du bon filet de poulet mariné dans notre spécialité sucrée & épicée, enveloppé dans une tortilla blanche douce faite maison",
+      "active": "Yes"
+   
+    },
+   {
+      "carousel-id": "1",
+      "titre": "Wrap", 
+      "image": "assets/img/images_the_district/category/wrap_cat.png",
+      "description": "Du bon filet de poulet mariné dans notre  ",
+      "active": "Yes"
+     
+    },
+    {
+      "carousel-id": "2",
+      "titre": "Burger",
+      "image": "assets/img/images_the_district/category/burger_cat.png",
+      "description": "Du bon filet de poulet mariné dans notre spécialité sucrée ",
+      "active": "Yes"
+      
+    }
+  ]
+  }

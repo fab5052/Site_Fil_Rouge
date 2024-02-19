@@ -1,0 +1,491 @@
+*,
+::before,
+::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Assure que le header reste au-dessus du contenu */
+  background-color: #898888; /* Couleur de fond du header */
+  /* Autres styles personnalisés selon vos besoins */
+}
+
+/* CSS pour le footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100; /* Assure que le footer reste au-dessus du contenu */
+  background-color: #898888; /* Couleur de fond du footer */
+  color: #3391b3; /* Couleur du texte dans le footer */
+  /* Autres styles personnalisés selon vos besoins */
+}
+
+/* CSS pour le contenu principal */
+.main-content {
+  margin-top: 200px; /* Marge en haut pour éviter le chevauchement avec le header */
+  margin-bottom: 150px; /* Marge en bas pour éviter le chevauchement avec le footer */
+}
+
+
+.parallax {
+  background-image: url("https://preview.redd.it/abi3po0ip82a1.jpg?vthumb=1&s=130fdf6bba32bb64cbee1d0d1fe960ee1cb933ac");
+  background-attachment: fixed; /* Fixe l'image pendant le scroll */
+  background-size: cover ; /* L'image prendra 100% de l'espace, quitte à la crop */
+  background-position: center; /* Centre la position de l'image */
+  background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
+
+  overflow: hidden;
+ 
+
+}
+
+
+nav {
+position: fixed;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 15px 25px;
+background:  #898888;
+box-shadow: inset 0px -1px 0px #77777c;
+z-index: 2;
+}
+.nav-icon {
+display: flex;
+align-items: center;
+text-decoration: none;
+margin-right: 20px;
+}
+
+.nav-icon span {
+font-family: Roboto Flex, sans-serif;
+font-size: 25px;
+margin-left: 10px;
+font-weight: 400;
+color: #e7dede;
+}
+
+.nav-icon img {
+width: 120px;
+height: 125px;
+
+}
+
+.toggle {
+display: none;
+}
+
+.navlinks-container a {
+display: flex;
+margin: 0 10px;
+font-size: 17px;
+font-weight: 600;
+
+color: #5e6f8ccd;
+text-shadow: solid 2px  #535354;
+position: relative;
+}
+.navlinks-container a::before {
+  display: flex;
+  color: #394043;
+}
+
+.navlinks-container a::after {
+content: "";
+display: block;
+position: absolute;
+bottom: -3px;
+width: 100%;
+height: 1px;
+color: #3391b3;
+transform: scale(0);
+transform-origin: left;
+background: #24242462;
+transition: transform 0.3s ease-out;
+}
+.navlinks-container a:hover::after {
+transform: scaleX(1);
+}
+
+.nav-authentication {
+  display: flex;
+vertical-align: top;
+justify-items: center;
+justify-content: space-between;
+color: #3391b3;
+order: 2;
+}
+
+.user-toggler {
+  height: 25px;
+  color: #3391b3;
+  order: 1;
+}
+
+
+
+
+@keyframes slideAnimation {
+
+0% {
+   
+    transform: translateX(110%);
+}
+
+50% {
+
+  transform: translateX(60%);
+}
+100% {
+   
+    transform: translateX(110%);
+}
+}
+
+#h1 {
+color: rgb(56, 24, 24);
+}
+
+.animated-img {
+  
+  animation: slideAnimation 6s infinite;
+  z-index: 10;
+
+}
+
+
+@media (max-width: 768px) {
+nav {
+  display: flex;
+  padding: 15px 20px;
+  position: relative;
+  background-color: #898888;
+}
+
+
+
+.main-navlinks {
+  order: 1;
+  width: auto;
+}
+
+.nav-icon {
+  order: 2;
+  margin: 0 auto;
+}
+
+.toggle {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  min-width: 7vw;
+  min-height: 7vw;
+  justify-items: center;
+  background: #c2c2c3c1;
+  box-shadow: 0 5px 15px rgba(37, 37, 41, 0.897);
+  border-radius: 6px;
+  border-color: #898888;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  order: 5;
+}
+
+.toggle span {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  width: 40px;
+  height: 5px;
+  background: #eb080cab;
+  border-radius: 10px;
+  justify-items: center;
+  border-width: 10px;
+  transition: 1s;
+}
+
+.toggle span:nth-child(1) {
+  transform: translateY(-15px);
+  width: 25px;
+  left: 15px;
+}
+
+.toggle.active span:nth-child(1) {
+  width: 25px;
+ 
+
+  transform: translateY(0) rotate(45deg);
+  transition-delay: 0.125s;
+}
+
+.toggle span:nth-child(2) {
+  transform: translateY(15px);
+  width: 25px;
+  left: 10px;
+  right: 20px;
+}
+
+.toggle.active span:nth-child(2) {
+
+  width: 40px;
+  transform: translateY(0) rotate(315deg);
+  transition-delay: 0.25s;
+}
+
+.toggle.active span:nth-child(3) {
+  transform: translateX(55px);
+}
+
+
+
+.navlinks-container {
+  display: block;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  background: #c5c2c2ee;
+  top: 100%;
+  left: 0;
+  transform: translate(-100%);
+  height: 100vh;
+  padding: 15px 50px 15px 20px;
+  border-right: 1px solid #c5c5c6;
+}
+.open {
+  transform: translate(0%);
+}
+
+.navlinks-container a {
+  font-size: 15px;
+  margin: 10px 0px;
+}
+
+
+.nav-authentication {
+  order: 6;
+  margin-left: 0;
+}
+
+
+.user-toggler {
+  display: block;
+  cursor: pointer;
+  
+}
+
+.user-toggler img {
+  width: 20px;
+  color: #898888;
+  border: solid 2px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- 
+
+Center align the text within the three columns below the carousel 
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- 
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+
+/* Thin out the marketing headings 
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}*/
+
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@font-face {
+font-family: "neon-tubes-2-regular";
+src:
+  url("https://assets.codepen.io/2585/NeonTubes2.otf") format("woff"),
+  url("https://assets.codepen.io/2585/NeonTubes2.otf") format("opentype"),
+  url("https://assets.codepen.io/2585/NeonTubes2.otf") format("truetype")
+;
+}
+
+.neon-red {
+--neon: hsl(355 100% 95%);
+--neon-glow: hsl(355 98% 40%);
+}
+
+.neon-blue {
+--neon: hsl(192 100% 95%);
+--neon-glow: hsl(194 100% 40%);
+}
+
+h1 > i {
+color: var(--neon);
+text-shadow: 
+  0 0 20px var(--neon-glow),
+  0 0 2.5vmin var(--neon-glow),
+  0 0 5vmin var(--neon-glow),
+  0 0 10vmin var(--neon-glow),
+  0 0 15vmin var(--neon-glow);
+}
+
+@media (dynamic-range: high) {
+.neon-red {
+  --neon-glow: color(display-p3 1 0 0);
+}
+
+.neon-blue {
+  --neon-glow: color(display-p3 0 0.75 1);
+}
+
+h1 > i {
+  text-shadow: 
+    0 0 2.5vmin var(--neon-glow),
+    0 0 10vmin var(--neon-glow),
+    0 0 15vmin var(--neon-glow);
+}
+}
+
+
+
+h1 {
+text-align: center;
+
+
+
+font-family: "neon-tubes-2-regular", sans-serif;
+}
+
+.footer {
+position: relative;
+float: end;
+background-color: #333;
+padding: 2rem 0;
+}
+.footer-inner h3 {
+color: #595959;
+}
+.footer-inner .footer-list {
+padding: 0;
+margin: 0;
+display: block;
+}
+.footer-inner .footer-list li {
+display: block;
+color: #fff;
+margin-bottom: 0.8rem;
+}
+.footer-inner .footer-list li a:hover {
+text-decoration: underline;
+}
+.footer-inner .footer-list-inline {
+display: block;
+}
+.footer-inner .footer-list-inline li {
+display: inline-block;
+margin-right: 1.8rem;
+}
+
+.droits {
+ display: flex;
+ margin-left: 4;
+}
+
+.accordion-group {
+  height: 360px;
+}
+.accordion-group li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion-group li.out h3 {
+  opacity: 0;
+}
+.accordion-group li h3 {
+  opacity: 1;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 2.5rem;
+  padding: 0;
+  margin: 10rem 0;
+}
+
+@-webkit-keyframes rotate {
+from {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+to {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+}
+@-moz-keyframes rotate {
+from {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+to {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+}
+@keyframes rotate {
+from {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+to {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+}
